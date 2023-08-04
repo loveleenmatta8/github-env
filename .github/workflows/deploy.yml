@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run server
-        run: npm start  http://127.0.0.1:$PORT   # & npx wait-on Value of the PORT env variable used in current job
+        run: npm start npx wait-on http://127.0.0.1:$PORT   # &  Value of the PORT env variable used in current job
       - name: Run tests
         run: npm test
       - name: Output information
