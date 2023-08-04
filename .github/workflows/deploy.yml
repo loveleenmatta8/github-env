@@ -2,7 +2,7 @@ name: Deployment
 on:
   push:
     branches:
-      - main
+      - master
       - dev
 env:                          #WOrkflow Level Environment Variables
   MONGODB_DB_NAME: github-db
